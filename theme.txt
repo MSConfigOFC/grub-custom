@@ -9,6 +9,17 @@ terminal-width: "100%"
 terminal-height: "100%"
 terminal-border: "0"
 
++ textbox {
+  left = 14%
+  top = 39%
+  width = 96%
+  height = 57%
+  background = "#090f14"     # fundo com transparência
+  border_color = "#ec212b"     # contorno verde
+  border_width = 1             # espessura da moldura
+  id = "menu_background"
+}
+
 # Boot menu
 + boot_menu {
   left = 15%

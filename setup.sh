@@ -1,12 +1,12 @@
 #!/bin/bash
 
-THEME_NAME="cachyos"
+THEME_NAME="frosttheme"
 GRUB_DIR="/boot/grub"
 THEMES_DIR="$GRUB_DIR/themes"
 THEME_DEST="$THEMES_DIR/$THEME_NAME"
 GRUB_CFG="/etc/default/grub"
 BACKUP_FILE="/etc/default/grub.backup.$THEME_NAME"
-TAG="# [cachyos-theme-applied]"
+TAG="# [frosttheme-theme-applied]"
 
 require_sudo() {
   if [ "$EUID" -ne 0 ]; then
@@ -79,7 +79,7 @@ remove_theme() {
 
 menu() {
   clear
-  echo "===== Tema GRUB CachyOS - Instalador ====="
+  echo "===== Tema Frost Theme Based CachyOS - Instalador ====="
   echo "1) Instalar o tema $THEME_NAME"
   echo "2) Remover o tema e restaurar backup do GRUB"
   echo "3) Cancelar"
